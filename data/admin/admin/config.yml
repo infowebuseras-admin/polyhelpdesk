@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: infowebuseras-admin/polyhelpdesk
+  branch: main
+
+media_folder: "docs"
+public_folder: "/docs"
+
+collections:
+  - name: "notifications"
+    label: "Notifications"
+    folder: "data"
+    create: true
+    format: "json"
+    slug: "notifications"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "string"}
+
+  - name: "documents"
+    label: "Documents"
+    folder: "data"
+    create: true
+    format: "json"
+    slug: "documents"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "File", name: "file", widget: "file"}
